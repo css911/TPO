@@ -1,0 +1,145 @@
+﻿
+<html>
+<head>
+ <meta charset="utf-8">
+    <!-- This file has been downloaded from Bootsnipp.com. Enjoy! -->
+    <title>Update Company</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+<style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+	  background-color: #555;
+      color: white;
+      padding: 15px;
+	  position:fixed;
+	  height:50px;
+      bottom:0px;
+      left:0px;
+      right:0px;
+      margin-bottom:0px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+	textarea.form-control
+	{
+		height: 30%;
+	}
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+<h1 class="text-center"> 
+<a class="pull-left" href="http://139.59.34.20:8090/"> 
+<img class="img-responsive" style="vertical-align: bottom;" src="pict_logo.png" alt="pict logo"/>
+</a><span style="margin-left: -20%; color: rgb(222, 222, 222);">Training and Placement</span></h1>  
+
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="http://139.59.34.20:8090/">Home</a></li>
+        <!--  dropdown menu
+		<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Account <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Companies</a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#">Notifications</a></li>
+          </ul>
+        </li>
+		-->
+        <li><a href="#">Upload</a></li>
+        <li><a href="./RegistrationForm.html">Update</a></li>
+		<li><a href="./notify.html">Notify</a></li>
+		<li><a href="#">Statistics</a></li>
+		<li><a href="#">Notifications</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<form class="form-horizontal">
+<fieldset>
+
+<!-- Form Name -->
+<br><br>
+<h2 align="center">Login</h2>
+<br>
+<form class="form-horizontal">
+<fieldset>
+
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">username</label>  
+  <div class="col-md-4">
+  <input id="textinput" name="textinput" type="text" placeholder="username" class="form-control input-md">
+  <span class="help-block">eg.xyz@pqr.com</span>  
+  </div>
+</div>
+
+<!-- Password input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="passwordinput">Password </label>
+  <div class="col-md-4">
+    <input id="passwordinput" name="passwordinput" type="password" placeholder="Password" class="form-control input-md">
+    <span class="help-block">forgot password ??</span>
+  </div>
+</div>
+
+</fieldset>
+</form>
+
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="notify"></label>
+  <div class="col-md-4" align="center">
+    <button id="notify" name="notify" class="btn btn-info">Notify Candidate</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+<footer class="container-fluid text-center">
+ <p>Copyrights <span  class="glyphicon glyphicon-copyright-mark"</span> 2016-17 by PICT, Pune. All rights reserved | Made with <span class="glyphicon glyphicon-heart" style="color:red;"></span> in PICT.</p> 
+</footer>
+</body>
+</html>
